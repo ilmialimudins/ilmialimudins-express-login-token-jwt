@@ -1,0 +1,23 @@
+"dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/runtime": "^7.20.7",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "sequelize": "^6.28.0"
+  },
+
+
+
+"devDependencies": {
+    "sequelize-auto": "^0.8.8"
+  }
+
+"start": "nodemon --exec babel-node server.js",
+    "reverse:db": "sequelize-auto -o ./models -d hr-db -h localhost -u postgres -p 5432 -x admin -e postgres"
